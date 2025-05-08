@@ -2,6 +2,7 @@ import requests
 import phonenumbers
 import json
 from phonenumbers.phonenumberutil import NumberParseException
+from pprint import pprint
 
 def getCase(query):
     url = "https://api.fbi.gov/wanted/v1/list"
@@ -33,6 +34,16 @@ def checkPhone(phone):
             'region': 'Unknown'
         }
     
+def getClientIP():
+    try:
+        response = requests.get('https://api.ipify.org?format=json', timeout=5)
+        if response.status_code == 200:
+            return response.json().get('ip', 'Unavailable')
+    except requests.RequestException as e:
+        print("Error:", e)
+
+    return 'Unavailable'
+
 def saveReport(report, filename='reports.json'):
     try:
         with open(filename, 'r') as f:

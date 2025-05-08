@@ -1,0 +1,41 @@
+[
+  {
+    "query": "robbery",
+    "phone": "+14155552671",
+    "phoneCountry": "US",
+    "clientIP": "178.221.225.76",
+    "case": {
+      "uid": "3c8f18b0ad984638b77a289e3d206e0d",
+      "title": "MURDER AND ROBBERY INVESTIGATION",
+      "description": "Unknown Suspect\r\nChesterfield, Virginia\r\nSeptember 29, 2016",
+      "image": "https://www.fbi.gov/wanted/seeking-info/murder-and-robbery-investigation/@@images/image",
+      "caution": null
+    }
+  },
+  {
+    "query": "robbery",
+    "phone": "+14155552671",
+    "phoneCountry": "US",
+    "clientIP": "178.221.225.76",
+    "case": {
+      "uid": "49be8f1507234c9289671733d11232b4",
+      "title": "UNKNOWN ARMED ROBBERY SUSPECTS",
+      "description": "Las Vegas, Nevada\r\nMay 19, 2016",
+      "image": "https://www.fbi.gov/wanted/seeking-info/unknown-armed-robbery-suspects/@@images/image",
+      "caution": "<p>Law enforcement authorities are seeking information regarding the identity of the five individuals responsible for the May 19, 2016, armed robbery of a jewelry store in the 3500-block of Las Vegas Boulevard South in Las Vegas, Nevada. The persons responsible may be in the possession of a significant number of Rolex brand wristwatches.\u00a0</p>\r\n<p>\u00a0</p>\r\n<p>The suspects are described as follows:</p>\r\n<p>\u00a0</p>\r\n<p>Suspect #1: Black male, 18 to 20 years of age, 5\u201910\u201d, 180 pounds</p>\r\n<p>\u00a0</p>\r\n<p>Suspect #2: Black male, 18 to 20 years of age, 5\u201910\u201d, 165 pounds</p>\r\n<p>\u00a0</p>\r\n<p>Suspect #3: Black male, 18 to 20 years of age, 5\u20197\u201d, 150 pounds, facial hair</p>\r\n<p>\u00a0</p>\r\n<p>Suspect #4: Black male, 18 to 20 years of age, 5\u201911\u201d, 170 pounds</p>\r\n<p>\u00a0</p>\r\n<p>Suspect #5: Black male, 18 to 20 years of age, 5'6\u201d, 140 pounds, facial hair</p>\r\n<p>\u00a0</p>\r\n<p>Following the robbery, the suspects may have escaped in a newer model black Chevrolet Camaro and a gray Lexus RX300.</p>"
+    }
+  },
+  {
+    "query": "robbery",
+    "phone": "+14155552671",
+    "phoneCountry": "US",
+    "clientIP": "178.221.225.76",
+    "case": {
+      "uid": "3c8f18b0ad984638b77a289e3d206e0d",
+      "title": "MURDER AND ROBBERY INVESTIGATION",
+      "description": "Unknown Suspect\r\nChesterfield, Virginia\r\nSeptember 29, 2016",
+      "image": "https://www.fbi.gov/wanted/seeking-info/murder-and-robbery-investigation/@@images/image",
+      "details": "<p>The FBI Richmond Division's Central Virginia Violent Crimes Task Force and the Chesterfield County Police Department are seeking the public's assistance in locating a suspect involved in the robbery and murder which occurred in Chesterfield, Virginia.</p>\r\n<p>As reported to the FBI, the following events occurred.\u00a0 During the evening hours on September 29, 2016, an unknown black male suspect entered\u00a0the Econo-Lodge Motel\u00a0located in the 2300 block of Indian Hill Road, Chesterfield, Virginia.\u00a0 The suspect was armed with a\u00a0revolver and demanded money from the night clerk.\u00a0 The clerk complied and without provocation the suspect fired, at point blank range, killing the victim before fleeing on foot.</p>\r\n<p>The suspect is described as a black male, thin build; wearing jeans, a\u00a0maroon long-sleeved hooded sweatshirt, a red brimmed ball cap, and dark colored shoes.\u00a0 At the time of the robbery and murder, the suspect also had what appeared to be a white bandage on his right hand.</p>\r\n<p>The Chesterfield (Virginia) County Police Department has released <a href=\"https://www.youtube.com/watch?v=S-zT7kfx9Lk\" data-val=\"https://www.youtube.com/watch?v=S-zT7kfx9Lk\" data-linktype=\"external\" data-urltype=\"/view\">a video about the case (YouTube).</a></p>"
+    }
+  }
+]

@@ -1,4 +1,4 @@
-from utils import getCase, checkPhone, saveReport
+from utils import getCase, checkPhone, saveReport, getClientIP
 from pprint import pprint
 
 def main():
@@ -6,7 +6,10 @@ def main():
     
     #data inputs
     query = input("Enter name or case title: ").strip()
-    phone = input("Enter your phone number: ").strip() 
+    phone = input("Enter your phone number: ").strip()
+    
+    #clientIP
+    clientIP =getClientIP()
 
     #run both checks
     phoneData = checkPhone(phone)
@@ -27,23 +30,24 @@ def main():
     #extract first matching case
     matched_case = caseData.get("items", [])[0]  # pick the first match
 
-    # build report
+    #build report
     report = {
         "query": query,
         "phone": phone,
-        "country": phoneData['region'],
+        "phoneCountry": phoneData['region'],
+        "clientIP": clientIP,
         "case": {
             "uid": matched_case.get("uid", ""),
             "title": matched_case.get("title", ""),
             "description": matched_case.get("description", ""),
-            "image": matched_case.get("images", [{}])[0].get("original", "")
+            "image": matched_case.get("images", [{}])[0].get("original", ""),
+            "details": matched_case.get("details", "")
         }
     }
 
     #save report in reports.json
     saveReport(report)
     print("Report submitted successfully.")
-    print(f"Country detected: {phoneData['region']}")
 
 if __name__ == "__main__":
     main()
