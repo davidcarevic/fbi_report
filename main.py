@@ -14,12 +14,12 @@ def main():
         return
 
     #data fetch and check
-    cateData = isValidCase(query)
+    caseData = isValidCase(query)
     if not cateData:
         print("Error: No matching FBI case found.")
         return
-    len(data.get("items", []))
-
+    #len(data.get("items", []))
+    print(caseData)
 
     #build report
     report = {
