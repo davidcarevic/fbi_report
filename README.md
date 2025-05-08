@@ -2,12 +2,12 @@
 A simple Python script to submit witness reports for FBI Most Wanted cases.
 
 1. **Download or clone** this repository:
-    [Download ZIP](https://github.com/yourusername/fbi_report/archive/refs/heads/master.zip)
+    [Download ZIP](https://github.com/davidcarevic/fbi_report/archive/refs/heads/master.zip)
 
    Or with Git:
 
    ```bash
-   git clone https://github.com/yourusername/fbi_report.git
+   git clone https://github.com/davidcarevic/fbi_report.git
    cd fbi_report
 
 2. **Install Python** if you don't have it:
