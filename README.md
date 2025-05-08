@@ -19,7 +19,7 @@ A simple Python script to submit witness reports for FBI Most Wanted cases.
 
 3. **Install the requirements**:
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 4. **Run the script**:
 
