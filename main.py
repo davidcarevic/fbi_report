@@ -1,4 +1,5 @@
 from utils import getCase, checkPhone, saveReport
+from pprint import pprint
 
 def main():
     print("=== Witness Report Submission ===")
@@ -18,14 +19,21 @@ def main():
     if not caseData:
         print("Error: No matching FBI case found.")
         return
-    #len(data.get("items", []))
-    print(caseData)
+
+    #extract first matching case
+    matched_case = caseData.get("items", [])[0]  # pick the first match
 
     #build report
     report = {
         "query": query,
         "phone": phone,
-        "country": phoneData['region']
+        "country": phoneData['region'],
+        "case": {
+            "uid": matched_case.get("uid", ""),
+            "title": matched_case.get("title", ""),
+            "description": matched_case.get("description", ""),
+            "image": matched_case.get("images", [{}])[0].get("original", "")
+        }
     }
 
     #save report in reports.json
