@@ -3,7 +3,7 @@ import phonenumbers
 import json
 from phonenumbers.phonenumberutil import NumberParseException
 
-def isValidCase(query):
+def getCase(query):
     url = "https://api.fbi.gov/wanted/v1/list"
     response = requests.get(url, params={"title": query})
     if response.status_code == 200:

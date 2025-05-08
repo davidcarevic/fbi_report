@@ -1,4 +1,4 @@
-from utils import isValidCase, checkPhone, saveReport
+from utils import getCase, checkPhone, saveReport
 
 def main():
     print("=== Witness Report Submission ===")
@@ -14,8 +14,8 @@ def main():
         return
 
     #data fetch and check
-    caseData = isValidCase(query)
-    if not cateData:
+    caseData = getCase(query)
+    if not caseData:
         print("Error: No matching FBI case found.")
         return
     #len(data.get("items", []))
