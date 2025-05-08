@@ -9,7 +9,7 @@ def main():
     phone = input("Enter your phone number: ").strip()
     
     #clientIP
-    clientIP =getClientIP()
+    clientIP = getClientIP()
 
     #run both checks
     phoneData = checkPhone(phone)
@@ -27,27 +27,29 @@ def main():
     if hasError:
         return  #exit early if either check failed
 
-    #extract first matching case
-    matched_case = caseData.get("items", [])[0]  # pick the first match
+    #extract cases
+    matched_cases = caseData.get('items', [])
 
-    #build report
-    report = {
-        "query": query,
-        "phone": phone,
-        "phoneCountry": phoneData['region'],
-        "clientIP": clientIP,
-        "case": {
-            "uid": matched_case.get("uid", ""),
-            "title": matched_case.get("title", ""),
-            "description": matched_case.get("description", ""),
-            "image": matched_case.get("images", [{}])[0].get("original", ""),
-            "details": matched_case.get("details", "")
+    #build a report for each case and store it
+    for matched_case in matched_cases:
+        report = {
+            "query": query,
+            "phone": phone,
+            "phoneCountry": phoneData['region'],
+            "clientIP": clientIP,
+            "case": {
+                "uid": matched_case.get("uid", ""),
+                "title": matched_case.get("title", ""),
+                "description": matched_case.get("description", ""),
+                "image": matched_case.get("images", [{}])[0].get("original", ""),
+                "details": matched_case.get("details", "")
+            }
         }
-    }
 
-    #save report in reports.json
-    saveReport(report)
-    print("Report submitted successfully.")
+        #save report in reports.json
+        saveReport(report)
+
+    print("Reports submitted successfully.")
 
 if __name__ == "__main__":
     main()
