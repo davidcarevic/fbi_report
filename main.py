@@ -8,22 +8,26 @@ def main():
     query = input("Enter name or case title: ").strip()
     phone = input("Enter your phone number: ").strip() 
 
-    #phone check
+    #run both checks
     phoneData = checkPhone(phone)
-    if not phoneData:
-        print("Error: Invalid phone number.")
-        return
-
-    #data fetch and check
     caseData = getCase(query)
-    if not caseData:
+    hasError = False
+
+    if not phoneData['valid']:
+        print("Error: Invalid phone number.")
+        hasError = True
+
+    if  not caseData or caseData.get('items') == []:
         print("Error: No matching FBI case found.")
-        return
+        hasError = True
+
+    if hasError:
+        return  #exit early if either check failed
 
     #extract first matching case
     matched_case = caseData.get("items", [])[0]  # pick the first match
 
-    #build report
+    # build report
     report = {
         "query": query,
         "phone": phone,
